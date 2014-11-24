@@ -16,27 +16,28 @@
         android:layout_centerHorizontal="false"
         android:text="开始" />
 
-    <SurfaceView
-        android:id="@+id/surfaceView1"
+    <com.example.activitytasktest.MSurface
+        android:id="@+id/mSurface1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="true" />
-
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/surfaceView1"
-        android:layout_below="@+id/surfaceView1"
-        android:text="start" />
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp" />
 
     <Button
         android:id="@+id/btn_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/surfaceView1"
-        android:layout_below="@+id/surfaceView1"
+        android:layout_alignRight="@+id/mSurface1"
+        android:layout_below="@+id/mSurface1"
+        android:layout_marginTop="37dp"
         android:text="stop" />
+
+    <Button
+        android:id="@+id/btn_start_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_stop"
+        android:layout_alignBottom="@+id/btn_stop"
+        android:layout_alignLeft="@+id/mSurface1"
+        android:text="start" />
 
 </RelativeLayout>
